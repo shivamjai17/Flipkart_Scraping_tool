@@ -1,11 +1,9 @@
-from logging import debug
-from types import MethodType
-from flask import Flask, render_template, redirect,request,session,url_for,send_file
-from numpy.core.fromnumeric import product
+
+from flask import Flask, render_template, redirect,request,session,url_for
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-from werkzeug.datastructures import Range
+
 
 
 app = Flask(__name__,static_url_path='/static')
